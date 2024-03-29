@@ -8,16 +8,16 @@ def question1():
     answers = {}
 
     # string "yes" or "no"
-    answers["(a)"] = None
-    answers["(b)"] = None
-    answers["(c)"] = None
-    answers["(d)"] = None
+    answers["(a)"] = "no"
+    answers["(b)"] = "no"
+    answers["(c)"] = "yes"
+    answers["(d)"] = "yes"
 
     # explain-string: explanation in english prose
-    answers["(a) explain"] = None
-    answers["(b) explain"] = None
-    answers["(c) explain"] = None
-    answers["(d) explain"] = None
+    answers["(a) explain"] = "A person could be a Home Owner and have a Low Annual Income"    
+    answers["(b) explain"] = "There are attribute combinations not explicitly covered by these rules, like a person with High Annual Income and Currently Employed" 
+    answers["(c) explain"] = "A person is a Home Owner and Single, the rule applied first could determine the outcome."
+    answers["(d) explain"] = "A default class ensures that every instance can be classified even if it does not meet any specific rule's conditions."
 
     return answers
 
@@ -46,14 +46,14 @@ def question3():
     answers = {}
 
     # string "yes" or "no"
-    answers["(a)"] = None
-    answers["(b)"] = None
-    answers["(c)"] = None
+    answers["(a)"] = "Yes"
+    answers["(b)"] = "Yes"
+    answers["(c)"] = "No"
 
     # explain-string: explanation in english prose
-    answers["(a) example"] = None
-    answers["(b) example"] = None
-    answers["(c) example"] = None
+    answers["(a) example"] = "An animal cannot simultaneously be an Aerial Creature, Aquatic Creature, warm-blooded, and fit the conditions of R4."
+    answers["(b) example"] = "They cover all possible combinations of the given attributes"
+    answers["(c) example"] = "Each rule applies to a distinct set of attributes, so the order in which they are applied does not affect the outcome."
 
     return answers
 # -----------------------------------------------------------
@@ -61,16 +61,16 @@ def question7():
     answers = {}
 
     # bool: True/False
-    answers["(a)"] = None
-    answers["(b)"] = None
-    answers["(c)"] = None
-    answers["(d)"] = None
+    answers["(a)"] = "True"
+    answers["(b)"] = "True"
+    answers["(c)"] = "False"
+    answers["(d)"] = "False"
 
     # explain_string: explanation in english prose
-    answers["(a) explain"] = None
-    answers["(b) explain"] = None
-    answers["(c) explain"] = None
-    answers["(d) explain"] = None
+    answers["(a) explain"] = "The back-propagation algorithm computes the gradient of the loss function with respect to each weight by propagating the error backwards through the network"
+    answers["(b) explain"] = "The activations at each layer are computed based on the activations of the previous layer and the current layer’s weights, making it possible to compute activations in a feedforward manner from input to output."
+    answers["(c) explain"] = "The vanishing gradient problem refers to the issue where gradients become increasingly smaller as the error is propagated back through the layers, leading to minimal changes in weights and thus slowing down or halting training"
+    answers["(d) explain"] = "Gradients of loss with respect to weights at all layers are 0, as small adjustments could still potentially reduce the loss further, especially if regularization is applied."
 
     return answers
 
