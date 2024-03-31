@@ -128,20 +128,20 @@ def question10():
     answers = {}
 
     # float
-    answers["(a) P(A=1|+)"] = 0.4
+    answers["(a) P(A=1|+)"] = 0.6
     answers["(a) P(B=1|+)"] = 0.4
-    answers["(a) P(C=1|+)"] = 0.6
-    answers["(a) P(A=1|-)"] = 0.2
-    answers["(a) P(B=1|-)"] = 0.0
+    answers["(a) P(C=1|+)"] = 0.8
+    answers["(a) P(A=1|-)"] = 0.4
+    answers["(a) P(B=1|-)"] = 0.4
     answers["(a) P(C=1|-)"] = 0.2
 
     # type: explanatory string
-    answers["(a) P(A=1|+) explain your answer"] = "This means that given the class is positive, the probability of A being 1 is 0.4."
+    answers["(a) P(A=1|+) explain your answer"] = "P(A=1|+) being 0.6 reflects the likelihood of A occurring in positive conditions, indicating a stronger association with positivity than negativity"
   
     # type: float
     # note: R is the sample (A=1,B=1,C=1)
     answers["(b) P(+|R)"] = 1.0 
-    answers["(b) P(R|+)"] = 0.096
+    answers["(b) P(R|+)"] = 0.2
     answers["(b) P(R|-)"] = 0.0
 
     # string, '+' or '-'
@@ -151,24 +151,24 @@ def question10():
     answers["(b) class label"]= '+'
   
     # float
-    answers["(c) P(A=1)"] = 0.3
-    answers["(c) P(B=1)"] = 0.2
-    answers["(c) P(A=1,B=1)"] = 0.1
+    answers["(c) P(A=1)"] = 0.5
+    answers["(c) P(B=1)"] = 0.4
+    answers["(c) P(A=1,B=1)"] = 0.2
 
     # type: string, 'yes' or 'no'
-    answers["(c) A independent of B?"] = 'No'
+    answers["(c) A independent of B?"] = 'yes'
   
     # type: float
-    answers["(d) P(A=1)"] = 0.3
-    answers["(d) P(B=0)"] = 0.8
-    answers["(d) P(A=1,B=0)"] = 0.2
+    answers["(d) P(A=1)"] = 0.5
+    answers["(d) P(B=0)"] = 0.6
+    answers["(d) P(A=1,B=0)"] = 0.3
 
     # type: string: 'yes' or 'no'
-    answers["(d) A independent of B?"] = 'No'
+    answers["(d) A independent of B?"] = 'yes'
   
     # type: float
     answers["(e) P(A=1,B=1|+)"] = 0.2
-    answers["(e) P(A=1|+)"] = 0.4
+    answers["(e) P(A=1|+)"] = 0.6
     answers["(e) P(B=1|+)"] = 0.4
 
     # type: string: 'yes' or 'no'
@@ -176,7 +176,7 @@ def question10():
     
 
     # type: explanatory string
-    answers["(e) A and B conditionally independent given class +, explain"] =  None
+    answers["(e) A and B conditionally independent given class +, explain"] =  "Since this is not the case here (0.2 ≠ 0.24), it indicates that there's some degree of dependency between A and B when the condition is positive"
   
     return answers
 # --------------------------------------------------------
