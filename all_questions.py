@@ -46,9 +46,9 @@ def question3():
     answers = {}
 
     # string "yes" or "no"
-    answers["(a)"] = "Yes"
-    answers["(b)"] = "Yes"
-    answers["(c)"] = "No"
+    answers["(a)"] = "No"
+    answers["(b)"] = "No"
+    answers["(c)"] = "yes"
 
     # explain-string: explanation in english prose
     answers["(a) example"] = "An animal cannot simultaneously be an Aerial Creature, Aquatic Creature, warm-blooded, and fit the conditions of R4."
@@ -114,7 +114,7 @@ def question9():
     answers = {}
 
     # int"
-    answers["(a) K"] = 1
+    answers["(a) K"] = 5
     answers["(b) K"] = 50
 
     # explain_string
@@ -147,9 +147,7 @@ def question10():
     # string, '+' or '-'
     answers["(b) class label"] = '+'
 
-    # string, '+' or '-'
-    answers["(b) class label"]= '+'
-  
+   
     # float
     answers["(c) P(A=1)"] = 0.5
     answers["(c) P(B=1)"] = 0.4
