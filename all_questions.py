@@ -51,9 +51,9 @@ def question3():
     answers["(c)"] = "yes"
 
     # explain-string: explanation in english prose
-    answers["(a) example"] = "An animal cannot simultaneously be an Aerial Creature, Aquatic Creature, warm-blooded, and fit the conditions of R4."
-    answers["(b) example"] = "They cover all possible combinations of the given attributes"
-    answers["(c) example"] = "Each rule applies to a distinct set of attributes, so the order in which they are applied does not affect the outcome."
+    answers["(a) example"] = "a warm-blooded vertebrate that gives birth and is not an aquatic or aerial creature; this vertebrate would satisfy both R2 and R3, ."
+    answers["(b) example"] = "a vertebrate that is cold-blooded, does not give birth, and is neither an aerial nor an aquatic creature, which would not be classified correctly by any of the given rules (R1 to R4)"
+    answers["(c) example"] = "the rules are not mutually exclusive, the order in which they are applied is important to ensure correct classification."
 
     return answers
 # -----------------------------------------------------------
@@ -114,12 +114,12 @@ def question9():
     answers = {}
 
     # int"
-    answers["(a) K"] = 5
-    answers["(b) K"] = 50
+    answers["(a) K"] = 1
+    answers["(b) K"] = 5
 
     # explain_string
     answers["(a) explain"] = "The data points are well separated by class, so a small K value like K = 1 or K = 5 will likely perform well."
-    answers["(b) explain"] = "The data points show a significant amount of overlap, and choosing a small K value might lead to misclassification due to noise"
+    answers["(b) explain"] = "The data points are closer together and there's more overlap between classes, a slightly larger K value will help to reduce the impact of noise and provide a more generalized decision boundary"
 
     return answers
 
